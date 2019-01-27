@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto:300,400|Poppins:300,400,500,600,700');
+
+/* Root */
+:root {
+    --color-gray: #525252;
+    --color-primary: #00C4A6;
+    --color-secondary: #3C7AFC;
+}
+
+::selection {
+    background-color: var(--color-secondary);
+    color: #ffffff
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.parallax-container {
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: 'Bree Serif';
+    letter-spacing: 4px;
+    color: #333333;
+}
+
+.paragraph {
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+}
+
+
+/* Nav bar */
+.nav-container {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: -moz-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+
+}
+
+nav {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 76px;
+    background-color: #ffffff;
+    box-shadow: none;
+    transition: 0.3s
+}
+
+nav .list-only-large li {
+    height: 76px !important;
+}
+
+nav .brand-logo,
+nav .list-only-large a {
+    color: var(--color-gray) !important;
+    font-weight: 500;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    height: 76px;
+}
+
+nav .list-only-large a:hover {
+    background-color: transparent !important;
+    transition: 0.3s
+}
+
+.brand-logo img {
+    height: 60px;
+}
+
+
+/* Intro */
+#intro .col {
+    height: calc(100vh - 152px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro img {
+    width: 100%
+}
+
+#intro h3 {
+    font-size: 3.5rem;
+    font-family: 'Bree Serif', 'serif';
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    letter-spacing: 8px;
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#intro h6 {
+    padding-top: 8px;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    font-family: 'Poppins',
+        sans-serif;
+    font-weight: 600;
+    line-height: 2.3rem
+}
+
+
+/* Be-our-member & Volunteer*/
+#be-our-member,
+#be-our-volunteer {
+    background: linear-gradient(to right, var(--color-secondary) 0%, var(--color-primary) 100%);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 48px;
+}
+
+#be-our-volunteer {
+    margin-top: 0px;
+}
+
+#be-our-member .row,
+#be-our-volunteer .row {
+    margin: 0;
+    height: 78px;
+}
+
+#be-our-member .col,
+#be-our-volunteer .col {
+    height: 100%;
+    display: flex;
+    align-items: center !important;
+}
+
+#be-our-member .btn,
+#be-our-member .btn-large,
+#be-our-volunteer .btn,
+#be-our-volunteer .btn-large {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: auto;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+#be-our-member p,
+#be-our-volunteer p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Representing oec */
+#representing-oec,
+#latest-event {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#representing-oec.parallax-container,
+#latest-event.parallax-container {
+    height: 700px;
+}
+
+#representing-oec .title-container,
+#latest-event .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    padding-left: 24px;
+    padding-right: 24px
+}
+
+
+#representing-oec .title,
+#latest-event .title {
+    color: #ffffff;
+    margin: 0;
+}
+
+
+/* About us */
+#about-us {
+    padding-top: 54px;
+    padding-bottom: 96px;
+}
+
+
+
+/* Our team */
+#our-team .row,
+#our-team #our-team-details {
+    margin-bottom: 0;
+    background-color: #465A65
+}
+
+#our-team .row .col {
+    padding: 48px;
+}
+
+#our-team .member-cards {
+    background-color: #546E7B;
+}
+
+#our-team .member-cards img {
+    object-fit: cover
+}
+
+.stack {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#our-team .card {
+    color: #333333;
+}
+
+#our-team .card-image {
+    display: flex;
+    align-items: stretch;
+}
+
+#our-team .card-image img {
+    min-height: 250px
+}
+
+#our-team .card-content {
+    display: flex;
+    align-items: center;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+}
+
+#our-team .card-content .position {
+    font-weight: 700;
+    color: var(--color-secondary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+#our-team .card-content .name {
+    font-weight: 500;
+    margin-top: 18px !important;
+    font-size: 1.8rem;
+}
+
+#our-team .card-content .skills {
+    font-weight: 400;
+    color: var(--color-gray)
+}
+
+#our-team .card.horizontal .card-image {
+    max-width: 40%
+}
+
+#our-team .card .social {
+    margin-top: 18px
+}
+
+#our-team .card a {
+    font-size: 1.3rem;
+    margin-right: 18px;
+    color: var(--color-gray);
+    margin-left: 1.5px
+}
+
+
+
+
+/* our events cards */
+#our-events .card-content .card-title,
+#our-events .card-reveal .card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#our-events .btn-floating {
+    background-color: var(--color-primary)
+}
+
+#our-events .card-content .event-date,
+#our-events .card-reveal .event-date {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px
+}
+
+#our-events .card-action .register-btn.btn-flat {
+    padding-left: 4px;
+    padding-right: 4px;
+    color: var(--color-primary);
+    letter-spacing: 1px
+}
+
+
+/* Footer */
+footer {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.footer-copyright {
+    background-color: #465A65 !important;
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #000000;
+    background-color: #465A65;
+}
+
+footer .fas,
+footer .fab {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+footer .social {
+    margin-left: -8px
+}
+
+footer .social a {
+    color: #ffffff
+}

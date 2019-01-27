@@ -1,0 +1,128 @@
+@media only screen and (max-width: 992px) {
+
+    /* Heading */
+    .heading {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    /* Paragraph */
+    .paragraph {
+        font-size: 1.1rem;
+        letter-spacing: 0.7px;
+        word-spacing: 1px;
+    }
+
+
+    /* Nav bar */
+    nav {
+        height: 60px;
+    }
+
+    nav .brand-logo,
+    nav .dropdown-trigger {
+        color: var(--color-gray);
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    .brand-logo img {
+        height: 52px;
+    }
+
+    .dropdown-content {
+        min-width: 200px;
+        top: -10px
+    }
+
+    .dropdown-content a {
+        color: var(--color-gray) !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 1rem !important;
+    }
+
+
+
+    /* Intro */
+    #intro h3 {
+        font-size: 2.3rem;
+        line-height: 3rem;
+        letter-spacing: 6px;
+    }
+
+    #intro h6 {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.6rem;
+        line-height: 1.8rem
+    }
+
+    /* Be our member */
+
+    #be-our-member .row {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse
+    }
+   
+    #be-our-member .row,
+    #be-our-volunteer .row {
+        height: auto;
+    }
+
+    #be-our-member .btn,
+    #be-our-member .btn-large,
+    #be-our-volunteer .btn,
+    #be-our-volunteer .btn-large {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 1rem;
+    }
+
+    #be-our-member .row p,
+    #be-our-volunteer .row p {
+        margin-top: 0;
+        font-size: 1.4rem
+    }
+
+    /* Representing oec & Latest event*/
+    #representing-oec .title-container,
+    #latest-event .title-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        min-height: 98px
+    }
+
+    #representing-oec .title,
+    #latest-event .title {
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        line-height: 2rem
+    }
+
+    /* About us */
+    #about-us {
+        padding-top: 24px;
+        padding-bottom: 66px;
+    }
+
+    /* #our-team-details  */
+    #our-team .row {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    /* Our events */
+   
+    #our-events .card {
+        min-width: 300px;
+    }
+
+
+
+
+
+}

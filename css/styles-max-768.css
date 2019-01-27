@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+    /* Our team */
+ 
+
+    #our-team .row .col {
+        padding: 28px;
+    }
+    #our-team .member-cards {
+        background-color: #546E7B;
+    }
+
+    #our-team .card-content .position {
+        font-weight: 600;
+        color: var(--color-secondary);
+        letter-spacing: 1px;
+        text-transform: uppercase
+    }
+
+    #our-team .card-content .name {
+        font-weight: 500;
+        margin-top: 18px !important;
+        font-size: 1.5rem
+    }
+
+    #our-team .card-content .skills {
+        font-weight: 400;
+        font-size: 1rem
+    }
+
+
+
+}
